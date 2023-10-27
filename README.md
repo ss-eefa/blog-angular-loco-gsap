@@ -10,7 +10,7 @@ When I Try to make a full animated project with gsap and locomotive in my angula
 3.  Install Bootstrap
 ` npm install  bootstrap `
 4. Import CSS file and JS in file angular.json file
-![[Pasted image 20231027002842.png]]
+![Alt text](/assets/img/ss/Pasted image 20231027002842.png?raw=true "Optional Title")
 5. Create project Structure
 	1. I will Create some components
 		` ng g c Component_Name `
@@ -25,7 +25,7 @@ When I Try to make a full animated project with gsap and locomotive in my angula
 6. Install GSAP and locomotive
 ` npm i gsap locomotive-scroll `
 7. you can check in your package.json file
-![[Pasted image 20231026223854.png]]
+![Alt text](/assets/img/ss/Pasted image 20231026223854.png?raw=true "Optional Title")
 8. Configure locomotive and GSAP in configure service
 ```
 import { Injectable } from '@angular/core';
@@ -101,7 +101,7 @@ export class ConfigurationsService {
 }
 ```
 9. you should allow one more things to use locoscroll
- ![[Pasted image 20231027012349.png]]
+![Alt text](/assets/img/ss/Pasted image 20231027012349.png?raw=true "Optional Title")
 10.  We will inject this code in our components
 11.  Complete code is available in github
 https://github.com/ss-eefa/blog-angular-loco-gsap
