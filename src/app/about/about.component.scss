@@ -1,0 +1,181 @@
+@import "src/styles.scss";
+
+// header-section
+.hero-copy {
+  &-title {
+    margin: auto;
+    max-width: 873px;
+    margin-bottom: 16px;
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 48px;
+    }
+    @include media-breakpoint-down(md) {
+      margin-bottom: 24px;
+    }
+    h1 {
+      text-align: center;
+      color: #0a1e25;
+    }
+  }
+  &-body {
+    margin: auto;
+    max-width: 673px;
+    margin-bottom: 40px;
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 48px;
+    }
+    @include media-breakpoint-down(md) {
+      margin-bottom: 24px;
+    }
+    p {
+      color: #5f5f63;
+      text-align: center;
+    }
+  }
+}
+
+// about-section
+#section-2{
+  .title{
+    margin: auto;
+    max-width: 873px;
+    margin-bottom: 105px;
+    @include media-breakpoint-down(lg){
+      margin-bottom: 60px;
+    }
+    h2{
+      text-align: center;
+    }
+  }
+}
+.about-copy {
+  @include media-breakpoint-down(lg){
+    gap: 24px;
+  }
+  @include media-breakpoint-down(md){
+    gap: 12px;
+  }
+  .heading {
+    margin-bottom: 80px;
+    max-width: 521px;
+    @include media-breakpoint-down(lg) {
+      max-width: 704px;
+      margin-bottom: 40px;
+    }
+    @include media-breakpoint-down(md) {
+      margin-bottom: 24px;
+    }
+  }
+  .sub-heading {
+    gap: 24px;
+    @include media-breakpoint-down(lg) {
+      margin-top: 24px;
+    }
+    &-col {
+      max-width: 282px;
+      @include media-breakpoint-down(lg) {
+        max-width: 340px;
+      }
+      @include media-breakpoint-down(md) {
+        max-width: 400px;
+      }
+      p {
+        color: #5f5f63;
+      }
+    }
+  }
+  .choose-heading {
+    @include media-breakpoint-up(lg) {
+      max-width: 588px;
+      row-gap: 80px;
+    }
+  }
+  &-img {
+    max-width: 500px;
+    max-height: 600px;
+    position: relative;
+    overflow: hidden;
+    @include media-breakpoint-down(lg){
+      max-width: 800px;
+      max-height: 400px;
+    }
+    @include media-breakpoint-down(md){
+      width: 400px;
+      height: 240px;
+    }
+    .cover {
+      top: 0;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: #a68d61;
+      z-index: 999999;
+    }
+  }
+}
+
+//acheivment section
+.acheivment-header {
+  margin: auto;
+  max-width: 873px;
+  h2 {
+    text-align: center;
+    @include media-breakpoint-down(lg){
+      text-align: left;
+    }
+  }
+}
+
+.acheivment-area {
+  margin-top: 112px;
+  @include media-breakpoint-down(lg) {
+    margin-top: 40px;
+    overflow-x: scroll;
+    gap: 24px;
+  }
+  @include media-breakpoint-down(md) {
+    align-items: center;
+    gap: 20%;
+    row-gap: 24px;
+  }
+}
+
+// review sections
+.review-header {
+  &-title {
+    h2 {
+      text-align: center;
+    }
+  }
+}
+
+.reviews {
+  margin-top: 40px;
+  @include media-breakpoint-down(lg) {
+    overflow-x: auto;
+    gap: 24px;
+  }
+  @include media-breakpoint-down(md) {
+    margin-top: 24px;
+  }
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  &-card-img {
+    max-width: 300px;
+    max-height: 300px;
+    position: relative;
+    .cover {
+      top: 0;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: #a68d61;
+      z-index: 999999;
+    }
+  }
+}
+
+.review-header-button {
+  margin-top: 24px;
+}

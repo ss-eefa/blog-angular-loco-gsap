@@ -1,0 +1,69 @@
+<div class="">
+  <div class="container-fluid footer-bg vertical-space-md p-0">
+    <div class="footer d-flex flex-column flex-lg-row justify-content-between">
+      <div class="footer-header d-flex flex-column flex-md-row flex-lg-column">
+        <h1>Lorem, ipsum dolor.</h1>
+        <div class="cta">
+          <button class="btn btn-light" id="footer-1">
+            <span [routerLink]="['/contact-us']" id="footer-1-btn">Lorem.</span>
+          </button>
+        </div>
+      </div>
+      <div class="footer-body">
+        <div class="details">
+          <p class="content">Lorem, ipsum dolor. <a href="" class="footer-link">Lorem, ipsum.</a></p>
+          <p class="details-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, impedit.</p>
+        </div>
+        <div class="information-about d-flex">
+          <div class="social-info">
+            <div class="social-info-title">
+              <h3>Lorem, ipsum.</h3>
+            </div>
+            <div class="social-info-body d-flex flex-column justify-content-between">
+              <div class="email-section">
+                <div class="subtitle">
+                  <p>Lorem.</p>
+                </div>
+                <div class="email-link">
+                  <a href="" class="footer-sub-link">Lorem, ipsum dolor.</a>
+                </div>
+              </div>
+              <div class="phone-section">
+                <div class="subtitle">
+                  <p>Lorem.</p>
+                </div>
+                <div class="phone-link">
+                  <a href="" class="footer-sub-link">Lorem, ipsum.</a>
+                </div>
+              </div>
+              <div class="address-section">
+                <div class="subtitle">
+                  <p>Lorem.</p>
+                </div>
+                <div class="address-body">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, quos!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="social-info">
+            <div class="social-info-title">
+              <h3>Social Media</h3>
+            </div>
+            <div class="social-info-body d-flex flex-column justify-content-between">
+              <ul class="social-link d-flex flex-column">
+                <li class="items" *ngFor="let media of socialMedia"><a href="{{media.link}}" target="_blank" class="links">{{media.mediaId}}</a></li>
+              </ul>
+              <div class="copyright d-flex flex-column">
+                <a href="{{link.link}}" class="copyright-link" *ngFor="let link of copyRightLinks">{{link.title}}</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright-text">
+          <span>© Lorem ipsum dolor, sit amet consectetur adipisicing.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
