@@ -1,0 +1,28 @@
+<div class="container-fluid position-relative">
+  <div class="nav d-flex justify-content-between align-items-center">
+    <div class="logo" [routerLink]="['/home']">
+     <h2>DEMO</h2>
+    </div>
+    <ul class="menu d-none d-lg-flex align-self-center">
+      <li class="nav-menu-fonts" *ngFor="let menu of menus" [routerLink]="menu.route">{{ menu.menu }}</li>
+    </ul>
+    <div class="cta d-flex">
+      <button type="button" aria-label="toggle" (click)="toggle()"
+        class="hamburger-button border-0 d-flex flex-column d-lg-none position-relative justify-content-center lign-items-center" style="z-index: 100;">
+        <div class="blue-line" [ngClass]="{'blue-line-a':show}" id="line-1"></div>
+        <div class="blue-line" [ngClass]="{'blue-line-b':show}" id="line-2"></div>
+        <div class="blue-line" [ngClass]="{'blue-line-c':show}" id="line-3"></div>
+      </button>
+
+      <button class="d-none d-md-flex flex-column btn button-animation justify-content-center" id="button1" style="z-index: 999;">
+        <span id="initial-state-1" [routerLink]="['/contact-us']">
+          Book Now
+        </span>
+      </button>
+    </div>
+  </div>
+  <div class="cover"></div>
+  <ul class="hamburger-menu d-flex d-lg-none flex-column align-self-center">
+    <li class="nav-menu-fonts" *ngFor="let menu of menus" [routerLink]="menu.route">{{ menu.menu }}</li>
+  </ul>
+</div>
