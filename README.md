@@ -10,7 +10,7 @@ When I Try to make a full animated project with gsap and locomotive in my angula
 3.  Install Bootstrap
 ` npm install  bootstrap `
 4. Import CSS file and JS in file angular.json file
-![Alt text](/assets/img/ss/Pasted image 20231027002842.png?raw=true "Optional Title")
+![Alt text](assets/img/ss/Pasted image 20231027002842.png)
 5. Create project Structure
 	1. I will Create some components
 		` ng g c Component_Name `
