@@ -1,0 +1,169 @@
+<div class="home container-fluid position-relative">
+  <!-- start header section -->
+  <div class="header">
+    <div class="hero-copy">
+      <div class="hero-copy-title">
+        <h1>Lorem ipsum dolor sit.</h1>
+      </div>
+      <div class="hero-copy-body">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+      </div>
+    </div>
+    <div class="video-container">
+      <iframe
+        src="https://www.youtube.com/embed/PsFerKw-FS0?autoplay=1&mute=1&loop=1"
+        allowfullscreen
+        frameborder="0"
+      ></iframe>
+    </div>
+  </div>
+  <!-- end header section -->
+
+  <!-- start about section -->
+  <div class="sub-section vertical-space-sm" id="section-2">
+    <div
+      class="about-copy d-flex flex-column flex-lg-row justify-content-between"
+    >
+      <div class="heading">
+        <h2>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, in?
+        </h2>
+      </div>
+      <div class="sub-heading d-flex flex-column flex-md-row">
+        <div class="sub-heading-col">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis dignissimos aperiam libero asperiores dolorem labore esse ea expedita quia aspernatur quod explicabo, voluptate dolorum omnis pariatur sunt veniam tenetur doloremque?
+          </p>
+        </div>
+        <div class="sub-heading-col">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At, veritatis.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="cta d-flex">
+      <div class="cta-left align-self-center">
+        <div class="header-img" id="img-1">
+          <img
+            src="assets/img/g1.jpg"
+            alt="cta-left-img"
+            class="img-fluid"
+          />
+          <div class="cover"></div>
+        </div>
+      </div>
+      <div class="cta-right align-self-center">
+        <div class="header-img" id="img-2">
+          <img
+            src="assets/img/cta-right-header.jpg"
+            alt="cta-right-img"
+            class="img-fluid"
+          />
+          <div class="cover"></div>
+        </div>
+        <div class="cta-right-body">
+          <div class="body">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem alias ipsa quos fugit voluptas minima eligendi ducimus recusandae explicabo, laudantium minus nostrum dolorem quisquam inventore rem provident voluptate iure libero.
+              Culpa debitis dicta ea quam error accusantium ipsa, quos laudantium, sed omnis, voluptate modi ipsum temporibus. Repudiandae error nihil praesentium sit cupiditate odio aliquid fuga. Iure et reiciendis ratione vel.
+            </p>
+          </div>
+          <div class="cta-button position-relative" id="cta-button">
+            <a [routerLink]="['/about-us']"  id="link">More About Us</a>
+            <div class="divider"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end about section -->
+
+  <!-- start pricing section -->
+  <div class="sub-section vertical-space-lg intro-section" id="section-3">
+    <div class="intro-section">
+      <div class="intro-header">
+        <h2>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium qui, obcaecati cumque nobis consequatur distinctio exercitationem animi repudiandae facere, aliquam commodi quidem dolorum aut! Molestiae provident aut voluptatum harum dolore.
+        </h2>
+      </div>
+      <div
+        class="intro-cards-area d-flex flex-column flex-md-row justify-content-between"
+      >
+        <div
+          class="intro-card"
+          *ngFor="let card of introCards; let last = last"
+        >
+          <div class="intro-card-header">
+            <div class="intro-card-header-icon">
+            </div>
+            <div class="intro-card-header-title">
+              <h3>{{ card.title }}</h3>
+            </div>
+          </div>
+          <div class="intro-card-body">
+            <div class="intro-card-body-content">
+              <p>{{ card.body }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="activity-action">
+        <button
+          class="btn button-animation d-flex flex-column"
+          id="activity-btn"
+        >
+          <span [routerLink]="['/activity']" id="activity-text"> View All Activities </span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- end pricing section -->
+
+  <!-- start assurance section -->
+  <div class="sub-section vertical-space-lg" id="section-4">
+    <div class="assurance-header">
+      <h2>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium qui, obcaecati cumque nobis consequatur distinctio exercitationem animi repudiandae facere, aliquam commodi quidem dolorum aut! Molestiae provident aut voluptatum harum dolore.
+      </h2>
+    </div>
+    <div
+      class="assurance-body d-flex flex-column flex-lg-row justify-content-between"
+    >
+      <div class="assurance-body-content" id="imageAnimation">
+        <div class="assurance-body-content-description">
+          <p>
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel a nobis hic esse placeat, mollitia repudiandae aliquid veniam fuga facere incidunt facilis commodi quisquam obcaecati modi ipsum accusamus omnis expedita.
+           Provident accusantium quaerat odit quo inventore itaque aut quibusdam, voluptatibus architecto sed laboriosam eum reprehenderit deleniti quis doloremque voluptas cupiditate eligendi? Voluptatem ea animi aut repudiandae quam aliquid quisquam ipsa.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium qui, obcaecati cumque nobis consequatur distinctio exercitationem animi repudiandae facere, aliquam commodi quidem dolorum aut! Molestiae provident aut voluptatum harum dolore.wwwwww
+          </p>
+        </div>
+        <ul class="assurance-body-content-list d-flex flex-column">
+          <li
+            *ngFor="let pointer of assurancePointers"
+            class="d-flex list-item"
+          >
+            <div class="icon align-self-center">
+            </div>
+            <p class="align-self-center">{{ pointer.text }}</p>
+          </li>
+        </ul>
+      </div>
+      <div class="assurance-body-img" id="img-3">
+        <img
+          data-scroll
+          src="assets/img/assurance-img.jpg"
+          alt="assurance-header-img"
+          class="img-fluid img-element"
+          style="width: 100%; height: 100%; object-fit: cover;"
+        />
+        <div class="cover"></div>
+      </div>
+    </div>
+  </div>
+  <!-- end assurance section -->
+</div>
